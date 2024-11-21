@@ -1,7 +1,7 @@
 # AI-Waifu Voice Assistant
 
 ## Project Overview
-AI-Waifu is an IoT-based voice assistant designed as Task 2 for the ECL-108 IoT Workshop. The project employs two ESP32 DevKit boards communicating via UART to capture and process voice input, then produce synthesized speech output. It utilizes a MEMS microphone (INMP441) and an I2S audio amplifier (MAX98357A) for audio input and output, respectively. The Google Text-to-Speech (TTS) API generates responses with a Japanese female voice.
+AI-Waifu is an IoT-based voice assistant designed as Task 2 for the ECL-108 IoT Workshop 2. The project employs two ESP32 DevKit boards communicating via UART to capture and process voice input, then produce synthesized speech output. It utilizes a MEMS microphone (INMP441) and an I2S audio amplifier (MAX98357A) for audio input and output, respectively. The Google Text-to-Speech (TTS) API generates responses with a Japanese female voice.
 
 ## Key Features
 - **Real-time Speech Recognition:** Captures audio from a MEMS microphone and converts it to text.
@@ -90,7 +90,7 @@ ai-waifu/
 
 ### 1. **Prerequisites:**
 - Install [Arduino IDE](https://www.arduino.cc/en/software).
-- Add [ESP32 board support](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html).
+- Add [ESP32 board support](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/).
 - Obtain a [Google Cloud TTS API Key](https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries).
 
 ### 2. **Code Deployment:**
@@ -144,11 +144,16 @@ ai-waifu/
 2. **UART Communication Failure:**
    - Ensure both boards have matching baud rates.
    - Confirm TX/RX connections.
-   - Avoid connecting GND of both ESP32 Devkit boards together.
+   - Avoid connecting GND pins of both ESP32 Devkit boards together.
 
 3. **Google TTS Errors:**
    - Validate your API key.
    - Check internet connectivity.
+
+---
+
+## Demo Video
+Check out the project in action: [AI-Waifu Demo on LinkedIn](https://www.linkedin.com/posts/jjateen_ai-iot-aiot-activity-7108889698843955200-Yjcg?utm_source=share&utm_medium=member_desktop)
 
 ---
 
